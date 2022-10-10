@@ -4,13 +4,6 @@ import requests
 import extruct
 import pandas as pd
 from bs4 import BeautifulSoup
-# text=requests.get('https://www.dekudeals.com/hottest?view=list').text
-
-# def import_data(url):
-#     r = requests.get(url)
-#     #read json as a dictoinary
-#     data = dict(r.json())
-#     return data['results_html']
 
 def parse(data):
     gamelist=[]
@@ -50,24 +43,4 @@ for x in range(1,43,1):
     # a=pd.concat([pd.DataFrame(results) for g in results])
     # print(a)
 gamesdf = pd.concat([pd.DataFrame(g) for g in results])
-# print(results)
-gamesdf.to_csv('gamesprices-Nintend.csv', index=False)
-
-# data=requests.get('https://www.dekudeals.com/hottest?view=list&page=2').text
-# results.append(parse(data))
-# print(results)
-
-# print(gamesdf)
-# # # ,columns=['Title','Original Price','Current Price', 'Discount','Sale End Date','Price Status']
-
-# print('Fin. Saved to CSV')
-# print(gamesdf)
-
-# def output(results):
-#     gamesdf = pd.concat([pd.DataFrame(g) for g in results])
-#     gamesdf.to_csv('gamesprices.csv', index=False)
-#     print('Fin. Saved to CSV')
-#     print(gamesdf.head())
-#     return
-# results = []
-# results.append(gamelist)
+gamesdf.to_csv('gamesprices-Nintendo.csv', index=False)

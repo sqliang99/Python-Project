@@ -20,8 +20,8 @@ if title_input:
     title = re.sub('[^A-Za-z0-9 ]+', '', title_input)
     title = title.lower()
 
-    steam = pd.read_csv('gamesprices.csv')
-    nintendo = pd.read_csv('gamesprices-Nintend(full).csv')
+    steam = pd.read_csv('steam_price.csv')
+    nintendo = pd.read_csv('gamesprices-Nintendo.csv')
     gg = pd.read_excel('cleaned_ggdeal.xlsx')
     steam, nintendo, gg = f.data_processing(steam, nintendo, gg)
     history = pd.read_csv('sub_price_history.csv')

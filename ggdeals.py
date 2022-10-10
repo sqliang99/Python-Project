@@ -34,10 +34,3 @@ for game in games:
 games_df = pd.DataFrame(gamelist)
 games_df.to_csv('gameprices-ggdeals.csv', index=False)
 
-#name_wrapper = game.find('div', {'class': 'game-info-title_wrapper'})
-#print(name_wrapper)
-#print(bsyc.prettify())
-#fout = open('bsyc_temp.txt', 'wt', encoding='utf-8')
-#fout.write(str(bsyc))
-#fout.close()
-

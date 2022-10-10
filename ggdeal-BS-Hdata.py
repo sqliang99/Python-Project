@@ -77,4 +77,4 @@ for game in games:
 
 # gamesdf = pd.concat([pd.DataFrame(g) for g in result])
 gamesdf = pd.DataFrame(gamelist)
-gamesdf.to_csv('gamesprices-ggdeals.csv', index=False)
+gamesdf.to_csv('gamesprices-ggdeals（HdataIncluded）.csv', index=False)

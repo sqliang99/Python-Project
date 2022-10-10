@@ -54,4 +54,4 @@ def scrape_steam():
     return gamesdf
 
 df = scrape_steam()
-df.to_csv('gamesprices.csv', index=False)
+df.to_csv('steam_price.csv', index=False)
