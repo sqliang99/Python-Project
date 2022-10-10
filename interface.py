@@ -24,8 +24,7 @@ if title_input:
     nintendo = pd.read_csv('gamesprices-Nintend(full).csv')
     gg = pd.read_excel('cleaned_ggdeal.xlsx')
     steam, nintendo, gg = f.data_processing(steam, nintendo, gg)
-    #history = pd.read_csv('sub_price_history.csv')
-    history = pd.read_csv('history.csv')
+    history = pd.read_csv('sub_price_history.csv')
     history = process_history.make_history(history)
 
     if f.find_game(title, steam, nintendo, gg):
