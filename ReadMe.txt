@@ -1,2 +1,1 @@
-current to do:
-clean data summary
+Python project for CMU's python class.
